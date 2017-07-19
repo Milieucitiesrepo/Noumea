@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
 });
 
 app.get('/donations.json', (req, res) => {
+	res.render(json)
+});
+
+app.post('/donations.json', (req, res) => {
 	res.json(json);
 });
 
