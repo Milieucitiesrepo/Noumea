@@ -23,6 +23,7 @@ class SubmitBox extends React.Component {
           resolve(comment)
         },
         error: (error) => {
+          console.log(error)
           reject(error)
         }
       })
